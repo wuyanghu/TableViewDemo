@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4BAFC2C522CE3609001167AE /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BAFC2C422CE3609001167AE /* TestModel.m */; };
+		4BAFC2C822CE3894001167AE /* NSObject+Properties.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BAFC2C722CE3894001167AE /* NSObject+Properties.m */; };
+		4BAFC2CA22CE4B1C001167AE /* WCPayControlData.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4BAFC2C922CE4B1C001167AE /* WCPayControlData.txt */; };
 		4BE445E222CB835300F487B3 /* traveDir.py in Resources */ = {isa = PBXBuildFile; fileRef = 4BE445E122CB835300F487B3 /* traveDir.py */; };
 		4BE8485D22CB81E60073FC02 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BE8485C22CB81E60073FC02 /* AppDelegate.m */; };
 		4BE8486022CB81E60073FC02 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BE8485F22CB81E60073FC02 /* ViewController.m */; };
@@ -36,9 +39,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B366E1D22CD866B005DE083 /* ICNoteEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICNoteEditorViewController.h; sourceTree = "<group>"; };
+		4B366E1E22CD8787005DE083 /* ICNote-UndoSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ICNote-UndoSupport.h"; sourceTree = "<group>"; };
+		4BAFC2BE22CE2FDB001167AE /* ICFolderListDelegate-Protocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ICFolderListDelegate-Protocol.h"; sourceTree = "<group>"; };
+		4BAFC2BF22CE2FDB001167AE /* ICFolderListTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICFolderListTableViewCell.h; sourceTree = "<group>"; };
+		4BAFC2C022CE2FDB001167AE /* ICFolderListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICFolderListViewController.h; sourceTree = "<group>"; };
+		4BAFC2C122CE3052001167AE /* ICListTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICListTableView.h; sourceTree = "<group>"; };
+		4BAFC2C222CE30F9001167AE /* ICNotesListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICNotesListViewController.h; sourceTree = "<group>"; };
+		4BAFC2C322CE3609001167AE /* TestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestModel.h; sourceTree = "<group>"; };
+		4BAFC2C422CE3609001167AE /* TestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestModel.m; sourceTree = "<group>"; };
+		4BAFC2C622CE3894001167AE /* NSObject+Properties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Properties.h"; sourceTree = "<group>"; };
+		4BAFC2C722CE3894001167AE /* NSObject+Properties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Properties.m"; sourceTree = "<group>"; };
+		4BAFC2C922CE4B1C001167AE /* WCPayControlData.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WCPayControlData.txt; sourceTree = "<group>"; };
+		4BAFC2CB22CE5490001167AE /* WCPayBillEntryInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCPayBillEntryInfo.h; sourceTree = "<group>"; };
 		4BE445E122CB835300F487B3 /* traveDir.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = traveDir.py; sourceTree = "<group>"; };
 		4BE445E422CB839E00F487B3 /* WCBizMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCBizMainViewController.h; sourceTree = "<group>"; };
 		4BE445E522CB83AF00F487B3 /* WCPayControlData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCPayControlData.h; sourceTree = "<group>"; };
+		4BE445E822CB875C00F487B3 /* WCPayHoneyPayControlData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCPayHoneyPayControlData.h; sourceTree = "<group>"; };
+		4BE445E922CB882500F487B3 /* WCPayBalanceDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCPayBalanceDetailViewController.h; sourceTree = "<group>"; };
+		4BE445EB22CB8E6600F487B3 /* WCTLContentItemTemplateVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCTLContentItemTemplateVideo.h; sourceTree = "<group>"; };
+		4BE445EC22CB8E6600F487B3 /* WCSNSNodeVideoViewDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WCSNSNodeVideoViewDelegate-Protocol.h"; sourceTree = "<group>"; };
+		4BE445ED22CB8E6600F487B3 /* WCSNSNodeVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCSNSNodeVideoView.h; sourceTree = "<group>"; };
+		4BE445EE22CB94EA00F487B3 /* WCContentItemViewTemplateNewSight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCContentItemViewTemplateNewSight.h; sourceTree = "<group>"; };
 		4BE8485822CB81E60073FC02 /* iOSREHeaders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSREHeaders.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BE8485B22CB81E60073FC02 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4BE8485C22CB81E60073FC02 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -82,13 +104,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B366E1C22CD8661005DE083 /* MobileNotes */ = {
+			isa = PBXGroup;
+			children = (
+				4B366E1D22CD866B005DE083 /* ICNoteEditorViewController.h */,
+				4B366E1E22CD8787005DE083 /* ICNote-UndoSupport.h */,
+				4BAFC2BE22CE2FDB001167AE /* ICFolderListDelegate-Protocol.h */,
+				4BAFC2C022CE2FDB001167AE /* ICFolderListViewController.h */,
+				4BAFC2C122CE3052001167AE /* ICListTableView.h */,
+				4BAFC2BF22CE2FDB001167AE /* ICFolderListTableViewCell.h */,
+				4BAFC2C222CE30F9001167AE /* ICNotesListViewController.h */,
+			);
+			path = MobileNotes;
+			sourceTree = "<group>";
+		};
 		4BE445E322CB839600F487B3 /* WeChat */ = {
 			isa = PBXGroup;
 			children = (
-				4BE445E522CB83AF00F487B3 /* WCPayControlData.h */,
+				4BE445EA22CB8E1600F487B3 /* SaveShareVideo */,
 				4BE445E422CB839E00F487B3 /* WCBizMainViewController.h */,
+				4BE445E522CB83AF00F487B3 /* WCPayControlData.h */,
+				4BE445E822CB875C00F487B3 /* WCPayHoneyPayControlData.h */,
+				4BE445E922CB882500F487B3 /* WCPayBalanceDetailViewController.h */,
+				4BAFC2CB22CE5490001167AE /* WCPayBillEntryInfo.h */,
 			);
 			path = WeChat;
+			sourceTree = "<group>";
+		};
+		4BE445EA22CB8E1600F487B3 /* SaveShareVideo */ = {
+			isa = PBXGroup;
+			children = (
+				4BE445EC22CB8E6600F487B3 /* WCSNSNodeVideoViewDelegate-Protocol.h */,
+				4BE445ED22CB8E6600F487B3 /* WCSNSNodeVideoView.h */,
+				4BE445EB22CB8E6600F487B3 /* WCTLContentItemTemplateVideo.h */,
+				4BE445EE22CB94EA00F487B3 /* WCContentItemViewTemplateNewSight.h */,
+			);
+			path = SaveShareVideo;
 			sourceTree = "<group>";
 		};
 		4BE8484F22CB81E60073FC02 = {
@@ -114,16 +165,22 @@
 		4BE8485A22CB81E60073FC02 /* iOSREHeaders */ = {
 			isa = PBXGroup;
 			children = (
+				4B366E1C22CD8661005DE083 /* MobileNotes */,
 				4BE445E322CB839600F487B3 /* WeChat */,
 				4BE8485B22CB81E60073FC02 /* AppDelegate.h */,
 				4BE8485C22CB81E60073FC02 /* AppDelegate.m */,
 				4BE8485E22CB81E60073FC02 /* ViewController.h */,
 				4BE8485F22CB81E60073FC02 /* ViewController.m */,
+				4BAFC2C322CE3609001167AE /* TestModel.h */,
+				4BAFC2C422CE3609001167AE /* TestModel.m */,
+				4BAFC2C622CE3894001167AE /* NSObject+Properties.h */,
+				4BAFC2C722CE3894001167AE /* NSObject+Properties.m */,
+				4BAFC2C922CE4B1C001167AE /* WCPayControlData.txt */,
 				4BE445E122CB835300F487B3 /* traveDir.py */,
 				4BE8486122CB81E60073FC02 /* Main.storyboard */,
-				4BE8486422CB81E80073FC02 /* Assets.xcassets */,
 				4BE8486622CB81E80073FC02 /* LaunchScreen.storyboard */,
 				4BE8486922CB81E80073FC02 /* Info.plist */,
+				4BE8486422CB81E80073FC02 /* Assets.xcassets */,
 				4BE8486A22CB81E80073FC02 /* main.m */,
 			);
 			path = iOSREHeaders;
@@ -250,6 +307,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BAFC2CA22CE4B1C001167AE /* WCPayControlData.txt in Resources */,
 				4BE8486822CB81E80073FC02 /* LaunchScreen.storyboard in Resources */,
 				4BE8486522CB81E80073FC02 /* Assets.xcassets in Resources */,
 				4BE8486322CB81E60073FC02 /* Main.storyboard in Resources */,
@@ -280,7 +338,9 @@
 			files = (
 				4BE8486022CB81E60073FC02 /* ViewController.m in Sources */,
 				4BE8486B22CB81E80073FC02 /* main.m in Sources */,
+				4BAFC2C822CE3894001167AE /* NSObject+Properties.m in Sources */,
 				4BE8485D22CB81E60073FC02 /* AppDelegate.m in Sources */,
+				4BAFC2C522CE3609001167AE /* TestModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
