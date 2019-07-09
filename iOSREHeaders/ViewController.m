@@ -9,8 +9,19 @@
 #import "ViewController.h"
 #import "TestModel.h"
 #import "NSObject+Properties.h"
-@interface ViewController ()
+#import <objc/runtime.h>
+#import "BalloonFlyView.h"
+#import "LogWriteToFile.h"
+#import "SnowEffectView.h"
 
+#define CHFile(path) [NSString stringWithFormat:@"/Library/PreferenceLoader/Preferences/%@",path]
+
+@interface ViewController ()
+{
+    CGFloat animatedTime;
+}
+@property (nonatomic,strong) NSTimer * timer;
+@property (nonatomic,assign) NSInteger count;
 @end
 
 @implementation ViewController
@@ -21,37 +32,46 @@
     TestModel * model = [TestModel new];
     model.name = @"张三";
     model.sex = 1;
+    [LogWriteToFile writeToFileWithClass:self];
+    model.model2 = [TestModel2 new];
+    model.model2.download = @"baidu.com";
+    model.model2.teststring = @"teststring";
 
-    NSError *error;
-    NSString *textFileContents = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"allClassMessage" ofType:@"txt"] encoding:NSUTF8StringEncoding error:&error];
-    NSDictionary * dict = [self dictionaryWithJsonString:textFileContents];
-    NSLog(@"11");
-//    NSDictionary * dict = [model propertiesValues];
-//    NSLog(@"dict:%@",model);
-//    NSString * allClassMessage = @"allClassMessage";
-//    [allClassMessage writeToFile:@"/var/mobile/allClassMessage.txt" atomically:NO encoding:4 error:NULL];
+    [model setValue:@(2) forKey:@"sex2"];
     
-    
+//    SnowEffectView * snowView = [[SnowEffectView alloc] initWithFrame:self.view.frame];
+//    [self.view addSubview:snowView];
+//    [snowView show2];
 }
 
-//json格式字符串转字典：
-
-- (NSDictionary *)dictionaryWithJsonString:(NSString *)jsonString {
-    
-    if (jsonString == nil) {
-        return nil;
-    }
-    
-    NSData *jsonData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
-    NSError *err;
-    NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableContainers error:&err];
-    if(err) {
-        NSLog(@"json解析失败：%@",err);
-        return nil;
-    }
-    
-    return dic;
-    
+- (void)action{
+    BalloonFlyView *vi = [[BalloonFlyView alloc] initWithFrame:CGRectZero];
+    [vi showAnimationInView:self.view];
 }
 
+- (void)viewWillAppear:(BOOL)animated{
+//    self.timer = [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(showBallonFly) userInfo:nil repeats:YES];
+}
+
+- (void)viewWillDisappear:(BOOL)animated{
+//    [self.timer invalidate];
+//    self.timer = nil;
+}
+
+- (void)showBallonFly{
+    NSLog(@"showBallonFly");
+    BalloonFlyView *vi = [[BalloonFlyView alloc] initWithFrame:CGRectZero];
+    [vi showAnimationInView:self.view];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(animatedTime/3*1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        BalloonFlyView *vi2 = [[BalloonFlyView alloc] initWithFrame:CGRectZero];
+        [vi2 showAnimationInView:self.view];
+    });
+    
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(animatedTime/3*2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        BalloonFlyView *vi3 = [[BalloonFlyView alloc] initWithFrame:CGRectZero];
+        [vi3 showAnimationInView:self.view];
+    });
+}
 @end
