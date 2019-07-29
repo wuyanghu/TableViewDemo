@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface LogWriteToFile:NSObject
-+ (void)writeToFileWithClass:(id)selfClass;
++ (void)writeToFileWithFileName:(NSString *)fileName obj:(id)obj;
 @end

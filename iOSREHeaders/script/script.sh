@@ -22,6 +22,9 @@ elif [ $1 == 'connect' ];then
 elif [ $1 == 'make' ];then
      cd /Users/ruantong/Desktop/migu/reveseiosproejct
      make
+elif [ $1 == 'package' ];then
+    cd /Users/ruantong/Desktop/migu/reveseiosproejct
+    make package
 elif [ $1 == 'install' ];then
     cd /Users/ruantong/Desktop/migu/reveseiosproejct
     make package install
@@ -31,6 +34,12 @@ elif [ $1 == 'clean' ];then
 elif [ $1 == 'diff' ];then
     cd /Users/ruantong/Desktop/migu/cmread-iphone-dev_new_protal
     /Users/ruantong/Desktop/migu/arcanist/bin/arc diff --create
+elif [ $1 == 'open' ];then
+    open $2
+elif [ $1 == 'skin' ];then
+    open /Users/ruantong/Desktop/migu/需求/12_BR008601咪咕阅读主题皮肤功能/皮肤
+elif [ $1 == 'iosre' ];then
+    open /Users/ruantong/Desktop/migu/书籍/190616_iOS应用逆向工程
 else
     echo other
 fi

@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ShowAlertView : UIView
+@interface OCShowAlertView : UIView
 + (void)showAlertViewWithMessage:(NSString *)message;
++ (void)showAlertViewWithArg1:(id)arg1;
++ (NSString *)arg1ToString:(id)arg1;
+ + (void)printArg1:(id)arg1 prefix:(NSString *)prefix;
 @end

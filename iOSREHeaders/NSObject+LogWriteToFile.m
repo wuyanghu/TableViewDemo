@@ -11,19 +11,19 @@
 
 @implementation NSObject (LogWriteToFile)
 
-+ (void)load{
-    [self zg_swizzleInstanceMethodWithOriginSel:@selector(setValue:forUndefinedKey:) swizzledSel:@selector(setCustomValue:forUndefinedKey:)];
-}
-
-- (void)zg_swizzleInstanceMethodWithOriginSel:(SEL)originSel swizzledSel:(SEL)swizzledSel {
-    Method m1 = class_getInstanceMethod([self class], originSel);
-    Method m2 = class_getInstanceMethod([self class], swizzledSel);
-    method_exchangeImplementations(m1, m2);
-}
-
-- (void)setCustomValue:(id)value forUndefinedKey:(NSString *)key{
-    NSLog(@"key=%@",key);
-}
+//+ (void)load{
+//    [self zg_swizzleInstanceMethodWithOriginSel:@selector(setValue:forUndefinedKey:) swizzledSel:@selector(setCustomValue:forUndefinedKey:)];
+//}
+//
+//- (void)zg_swizzleInstanceMethodWithOriginSel:(SEL)originSel swizzledSel:(SEL)swizzledSel {
+//    Method m1 = class_getInstanceMethod([self class], originSel);
+//    Method m2 = class_getInstanceMethod([self class], swizzledSel);
+//    method_exchangeImplementations(m1, m2);
+//}
+//
+//- (void)setCustomValue:(id)value forUndefinedKey:(NSString *)key{
+//    NSLog(@"key=%@",key);
+//}
 
 - (NSDictionary *)dictionaryFromModel
 {
